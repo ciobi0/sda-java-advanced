@@ -1,4 +1,4 @@
-package com.company.billapp;
+package com.sdaJavaAdvanced.billapp;
 
 public enum CurrencyType {
     EUR("euro"),

@@ -1,4 +1,4 @@
-package com.company;
+package com.sdaJavaAdvanced;
 
 public class Main {
 

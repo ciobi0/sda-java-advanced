@@ -1,9 +1,9 @@
-package com.company.billapp;
+package com.sdaJavaAdvanced.billapp;
 
-public class BanknoteEur50 extends Banknote{
+public class BanknoteEur50 extends Banknote {
 
     public BanknoteEur50(int receivedLength, int receivedWidth) {
-        super(10,5,receivedLength, receivedWidth);
+        super(10, 5, receivedLength, receivedWidth);
     }
 
     @Override

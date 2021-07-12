@@ -1,4 +1,4 @@
-package com.company.billapp;
+package com.sdaJavaAdvanced.billapp;
 
 public abstract class Banknote implements PayableType{
     private int length;
