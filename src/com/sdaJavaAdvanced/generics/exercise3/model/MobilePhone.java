@@ -1,4 +1,4 @@
-package com.sdaJavaAdvanced.generics.model;
+package com.sdaJavaAdvanced.generics.exercise3.model;
 
 public class MobilePhone implements Identifiable {
     private String IMEI;

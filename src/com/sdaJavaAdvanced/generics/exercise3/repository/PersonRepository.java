@@ -1,6 +1,6 @@
-package com.sdaJavaAdvanced.generics.repository;
+package com.sdaJavaAdvanced.generics.exercise3.repository;
 
-import com.sdaJavaAdvanced.generics.model.Person;
+import com.sdaJavaAdvanced.generics.exercise3.model.Person;
 
 public class PersonRepository extends IdentifiableRepository<Person>{
     public Person getPersonByName(String name){

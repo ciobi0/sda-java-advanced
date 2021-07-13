@@ -10,9 +10,9 @@
 //- MobilePhone
 //Test the IdentifiableRepository in a main class.
 
-package com.sdaJavaAdvanced.generics.repository;
+package com.sdaJavaAdvanced.generics.exercise3.repository;
 
-import com.sdaJavaAdvanced.generics.model.Identifiable;
+import com.sdaJavaAdvanced.generics.exercise3.model.Identifiable;
 
 import java.util.ArrayList;
 import java.util.List;

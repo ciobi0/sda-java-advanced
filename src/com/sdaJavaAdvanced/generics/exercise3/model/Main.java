@@ -1,7 +1,7 @@
-package com.sdaJavaAdvanced.generics;
+package com.sdaJavaAdvanced.generics.exercise3.model;
 
-import com.sdaJavaAdvanced.generics.model.Person;
-import com.sdaJavaAdvanced.generics.repository.IdentifiableRepository;
+import com.sdaJavaAdvanced.generics.exercise3.model.Person;
+import com.sdaJavaAdvanced.generics.exercise3.repository.IdentifiableRepository;
 
 public class Main {
     public static void main(String[] args) {
