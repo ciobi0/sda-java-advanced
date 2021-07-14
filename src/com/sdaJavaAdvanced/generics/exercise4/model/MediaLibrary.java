@@ -1,22 +1,28 @@
 package com.sdaJavaAdvanced.generics.exercise4.model;
 
-public class MediaLibrary implements Media {
-    private String name;
-    private String author;
+import java.util.ArrayList;
+import java.util.List;
 
-    public MediaLibrary(String name, String author) {
-        this.name = name;
-        this.author = author;
+public class MediaLibrary {
+
+    private List<Media> mediaList=new ArrayList<>();
+    private Media media;
+
+
+    public List<Media> getMediaList() {
+        return mediaList;
     }
 
-
-    @Override
-    public String getName() {
-        return name;
+    public void setMediaList(List<Media> mediaList) {
+        this.mediaList = mediaList;
     }
 
-    @Override
-    public String getAuthor() {
-        return author;
+    public Media getMedia() {
+        return media;
+    }
+
+    public void setMedia(Media media) {
+        this.media = media;
+        mediaList.add(media);
     }
 }
