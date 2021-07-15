@@ -16,13 +16,21 @@ public class Main {
         }
         List<String> lines = Files.readAllLines(path);
         String max = "";
+        int numberOfWords=0;
+        int numberOfComas=0;
         for (String line : lines) {
             for (String word : line.split(" ")) {
                 if (word.length() > max.length()) {
                     max = word;
                 }
+                numberOfWords++;
+                if(word.contains(",")){
+                    numberOfComas++;
+                }
             }
         }
         System.out.println("max word found is:" + max);
+        System.out.println("number of words= "+numberOfWords);
+        System.out.println("number of commas= "+numberOfComas);
     }
 }
