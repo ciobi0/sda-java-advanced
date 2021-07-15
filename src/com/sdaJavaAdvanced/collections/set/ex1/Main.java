@@ -1,4 +1,4 @@
-package com.sdaJavaAdvanced.collections.set;
+package com.sdaJavaAdvanced.collections.set.ex1;
 
 import java.util.HashSet;
 import java.util.Scanner;

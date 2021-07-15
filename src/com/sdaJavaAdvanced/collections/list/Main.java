@@ -18,13 +18,12 @@ public class Main {
             System.out.println("Select option: ");
             option = scanner.nextLine();
             switch (option) {
-                case "add product":
+                case "add":
                     System.out.println("please insert product name: ");
                     String product = scanner.nextLine();
                     products.add(product);
-
                     break;
-                case "remove product":
+                case "remove":
                     System.out.println("please insert product name to be deleted: ");
                     String productToBeDeleted = scanner.nextLine();
                     products.remove(productToBeDeleted);
