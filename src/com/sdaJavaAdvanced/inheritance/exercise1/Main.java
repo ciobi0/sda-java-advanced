@@ -2,7 +2,11 @@ package com.sdaJavaAdvanced.inheritance.exercise1;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//Create a Shape class.
+//
+//Add fields, create constructor, getters and setters.
+//Create classes Rectangle and Circle. Both of them should inherit class Shape.
+//Which fields and methods are common?
 public class Main {
     public static void main(String[] args) {
         Shape shape1 = new Circle(3);
