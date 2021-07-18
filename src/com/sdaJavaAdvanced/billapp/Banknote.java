@@ -17,4 +17,12 @@ public abstract class Banknote implements PayableType{
     public boolean isFake(){
         return !(length == receivedLength && width == receivedWidth);
     }
+
+    public int getReceivedLength() {
+        return receivedLength;
+    }
+
+    public int getReceivedWidth() {
+        return receivedWidth;
+    }
 }

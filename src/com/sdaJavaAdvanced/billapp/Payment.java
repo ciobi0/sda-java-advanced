@@ -9,8 +9,7 @@ public class Payment {
     private List<PayableType> payableTypes = new ArrayList<>();
 
 
-    public Payment(int amountCollected, Bill bill) {
-        this.amountCollected = amountCollected;
+    public Payment(Bill bill) {
         this.bill = bill;
     }
 
