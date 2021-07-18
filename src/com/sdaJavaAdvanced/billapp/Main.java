@@ -2,57 +2,37 @@ package com.sdaJavaAdvanced.billapp;
 
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) throws FakePayableException {
+import static com.sdaJavaAdvanced.billapp.Utils.*;
 
-        Bill bill = new Bill("123456", 200, CurrencyType.EUR);
+public class Main {
+    public static void main(String[] args) {
+
+        Bill bill = generateBill();
         Payment payment = new Payment(bill);
         Scanner scanner = new Scanner(System.in);
         while (!payment.isBillPayed()) {
             System.out.println("you have payed: " + payment.getAmountCollected() + " " +
                     "from bill with value of: " + payment.getBill().getAmount());
-            System.out.println("select type of payment: [B]-banknote | [C]-coin | [T]-ticket");
-            String option = scanner.next().toUpperCase();
-            switch (option) {
-                case "B": {
+            PaymentType payMethod = getPaymentType(scanner);
+            switch (payMethod) {
+                case B: {
                     System.out.println("select type of banknote:\n" +
                             "[20]-eur20 | [50]-eur50 | [100]-eur100");
                     int value = scanner.nextInt();
-                    switch (value) {
-                        case 20:
-                            payment.addNewPayableType(new BanknoteEur20(10, 5));
-                            break;
-                        case 50:
-                            payment.addNewPayableType(new BanknoteEur50(10, 5));
-                            break;
-                        case 100:
-                            payment.addNewPayableType(new BanknoteEur100(10, 5));
-                            break;
-                        default:
-                            System.out.println("incorrect value");
-                    }
+                    extractedBanknote(payment, value);
                     break;
                 }
-                case "C": {
+                case C: {
                     System.out.println("select type of coin:\n" +
                             "[1]-eur1 | [2]-eur2");
                     int value = scanner.nextInt();
-                    switch (value) {
-                        case 1:
-                            payment.addNewPayableType(new CoinEur1(10, 5));
-                            break;
-                        case 2:
-                            payment.addNewPayableType(new CoinEur2(10, 5));
-                            break;
-                        default:
-                            System.out.println("incorrect value");
-                    }
+                    extractedCoin(payment, value);
                     break;
                 }
-                case "T":{
+                case T: {
                     System.out.println("enter Ticket serial number: ");
-                    String serialNumber=scanner.next();
-                    payment.addNewPayableType(new SodexoTicket(serialNumber));
+                    String serialNumber = scanner.next();
+                    extractedTicket(payment, serialNumber);
                     break;
                 }
                 default:
