@@ -1,6 +1,8 @@
-package com.sdaJavaAdvanced.billapp;
+package com.sdaJavaAdvanced.billapp.banknote;
 
-public abstract class Banknote implements PayableType{
+import com.sdaJavaAdvanced.billapp.PayableType;
+
+public abstract class Banknote implements PayableType {
     private int length;
     private int width;
     private int receivedLength;

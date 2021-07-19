@@ -36,11 +36,11 @@ public class Main {
                     }
                     break;
                 case "m2"://show all products that are before product that start with "m"
-                    for (int i=0;i<products.size();i++){
-                        String prod=products.get(i);
-                        if (prod.startsWith("m")){
-                            if (i>0){
-                                System.out.println(products.get(i-1));
+                    for (int i = 0; i < products.size(); i++) {
+                        String prod = products.get(i);
+                        if (prod.startsWith("m")) {
+                            if (i > 0) {
+                                System.out.println(products.get(i - 1));
                             }
                         }
                     }

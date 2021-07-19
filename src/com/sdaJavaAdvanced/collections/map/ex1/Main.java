@@ -9,7 +9,12 @@ import java.util.Scanner;
 //Ex: {d=9, o=6, r=7, W=5}
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        Map occHashMap =countCharAppearances(scanner);
+        System.out.println(occHashMap);
+    }
+
+    private static Map countCharAppearances(Scanner scanner) {
         System.out.println("insert a string:");
         String input = scanner.nextLine();
         Map<Character, Integer> numberOfOcc = new HashMap<>();
@@ -22,7 +27,6 @@ public class Main {
             else{
                 numberOfOcc.put(character,1);
             }
-        }
-        System.out.println(numberOfOcc);
+        }return numberOfOcc;
     }
 }

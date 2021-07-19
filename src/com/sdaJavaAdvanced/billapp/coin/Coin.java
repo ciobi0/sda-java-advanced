@@ -1,6 +1,8 @@
-package com.sdaJavaAdvanced.billapp;
+package com.sdaJavaAdvanced.billapp.coin;
 
-public abstract class Coin implements PayableType{
+import com.sdaJavaAdvanced.billapp.PayableType;
+
+public abstract class Coin implements PayableType {
     private double weight;
     private double radius;
     private double receivedWeight;

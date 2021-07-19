@@ -1,4 +1,7 @@
-package com.sdaJavaAdvanced.billapp;
+package com.sdaJavaAdvanced.billapp.banknote;
+
+import com.sdaJavaAdvanced.billapp.CurrencyType;
+import com.sdaJavaAdvanced.billapp.banknote.Banknote;
 
 public class BanknoteEur50 extends Banknote {
 

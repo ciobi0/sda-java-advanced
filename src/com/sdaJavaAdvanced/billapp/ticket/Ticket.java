@@ -1,4 +1,6 @@
-package com.sdaJavaAdvanced.billapp;
+package com.sdaJavaAdvanced.billapp.ticket;
+
+import com.sdaJavaAdvanced.billapp.PayableType;
 
 public abstract class Ticket implements PayableType {
     private String serialNumber;

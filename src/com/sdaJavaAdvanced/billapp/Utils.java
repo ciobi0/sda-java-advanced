@@ -1,5 +1,12 @@
 package com.sdaJavaAdvanced.billapp;
 
+import com.sdaJavaAdvanced.billapp.banknote.BanknoteEur100;
+import com.sdaJavaAdvanced.billapp.banknote.BanknoteEur20;
+import com.sdaJavaAdvanced.billapp.banknote.BanknoteEur50;
+import com.sdaJavaAdvanced.billapp.coin.CoinEur1;
+import com.sdaJavaAdvanced.billapp.coin.CoinEur2;
+import com.sdaJavaAdvanced.billapp.ticket.SodexoTicket;
+
 import java.util.Locale;
 import java.util.Scanner;
 
