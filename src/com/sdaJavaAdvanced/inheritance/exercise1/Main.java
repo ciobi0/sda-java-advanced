@@ -1,6 +1,8 @@
 package com.sdaJavaAdvanced.inheritance.exercise1;
 
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 //Create a Shape class.
 //
@@ -8,6 +10,7 @@ import java.util.List;
 //Create classes Rectangle and Circle. Both of them should inherit class Shape.
 //Which fields and methods are common?
 public class Main {
+
     public static void main(String[] args) {
         Shape shape1 = new Circle(3);
         Shape shape2 = new Rectangle(5,5);
