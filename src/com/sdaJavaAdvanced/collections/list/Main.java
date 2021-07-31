@@ -29,11 +29,14 @@ public class Main {
                     products.remove(productToBeDeleted);
                     break;
                 case "m"://display products that start with "m"
-                    for (String prod : products) {
-                        if (prod.startsWith("m")) {
-                            System.out.println(prod);
-                        }
-                    }
+//                    for (String prod : products) {
+//                        if (prod.startsWith("m")) {
+//                            System.out.println(prod);
+//                        }
+//                    }
+                    products.stream()
+                            .filter(p -> p.startsWith("m"))
+                            .forEach(System.out::println);
                     break;
                 case "m2"://show all products that are before product that start with "m"
                     for (int i = 0; i < products.size(); i++) {
@@ -51,6 +54,7 @@ public class Main {
                 default:
                     System.out.println("invalid option");
             }
+            System.out.println("==========products in list=================");
             for (String product : products) {
                 System.out.println(product);
             }
