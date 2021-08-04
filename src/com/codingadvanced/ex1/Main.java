@@ -13,7 +13,7 @@ public class Main {
 
         List<String> listOfLetters = Arrays.asList("d","e","a","f","r","i");
 
-       // System.out.println(sortdList(listOfLetters));
+       // System.out.println(sortList(listOfLetters));
         List<String> sortedList = sortList(listOfLetters);
         sortedList.stream().forEach(letter -> System.out.print(letter));
     }
