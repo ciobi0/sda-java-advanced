@@ -1,4 +1,4 @@
-package com.codingadvanced.ex13;
+package com.codingadvanced.ex13justme;
 
 import java.util.Objects;
 import java.util.Set;
