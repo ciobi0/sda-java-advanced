@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static List<String> reverseSortListCaseInsensitive(List<String> list) {
-        Collections.sort(list, (o1, o2) -> o2.compareToIgnoreCase(o1));
+        list.sort((o1, o2) -> o2.compareToIgnoreCase(o1));
         return list;
     }
 }

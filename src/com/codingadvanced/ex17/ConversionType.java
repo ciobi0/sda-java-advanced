@@ -1,7 +1,7 @@
 package com.codingadvanced.ex17;
 
 public enum ConversionType {
-    METERS_TO_YARDS(new MeterToYardsConverter()),
+    METERS_TO_YARDS(meters -> meters*1.09),
     YARDS_TO_METERS(yards -> yards * 0.914),
     CENTIMETERS_TO_INCHES(centimeters -> centimeters * 2.5),
     INCHES_TO_CENTIMETERS(inch -> inch * 0.25),
