@@ -1,4 +1,4 @@
-package com.codingadvanced.ex21;
+package com.codingadvanced.ex21_22;
 
 public class Qube extends Shape3D {
     private double side;
