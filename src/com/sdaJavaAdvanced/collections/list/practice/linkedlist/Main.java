@@ -25,13 +25,15 @@ public class Main {
         visitedCountries.getLast();
         visitedCountries.peekLast();
         //specific methods for removing and getting the first element
-        visitedCountries.removeFirst();
-        visitedCountries.pollFirst();
-        visitedCountries.poll();
-        visitedCountries.pop();
+//        visitedCountries.removeFirst();
+//        visitedCountries.pollFirst();
+//        visitedCountries.poll();
+//        visitedCountries.pop();
         //specific methods for removing and getting last element
-        visitedCountries.removeLast();
-        visitedCountries.pollLast();
+//        visitedCountries.removeLast();
+//        visitedCountries.pollLast();
+        System.out.println(visitedCountries);
+        System.out.println(visitedCountries.indexOf("Romania"));
 
 
     }

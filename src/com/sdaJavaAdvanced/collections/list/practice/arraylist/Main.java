@@ -1,15 +1,13 @@
 package com.sdaJavaAdvanced.collections.list.practice.arraylist;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         //listExample();
         //listIteratorExample();
-        listSortExample();
+        //listSortExample1();
+        listSortExample2();
     }
 
     private static void listExample() {
@@ -37,7 +35,7 @@ public class Main {
             System.out.println(iterator.next() + " ");
         }
     }
-    private static void listSortExample(){
+    private static void listSortExample1(){
         List<Integer> numbers = new ArrayList<>();
         numbers.add(9);
         numbers.add(10);
@@ -54,5 +52,14 @@ public class Main {
         });
         System.out.println("list after sort: "+numbers);
 
+    }
+
+    private  static void listSortExample2(){
+        List<String> strings = Arrays.asList("das","afa","dba","aaa");
+        Collections.sort(strings,Collections.reverseOrder());
+        Iterator iterator = strings.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }

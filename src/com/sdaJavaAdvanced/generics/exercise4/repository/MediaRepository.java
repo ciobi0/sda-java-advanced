@@ -26,6 +26,6 @@ public class MediaRepository <T extends Media>{
     }
 
     public List<T> getMediaItems() {
-        return mediaItems;
+        return new ArrayList<>(mediaItems);
     }
 }

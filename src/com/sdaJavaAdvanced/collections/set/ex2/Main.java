@@ -1,6 +1,7 @@
 package com.sdaJavaAdvanced.collections.set.ex2;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -43,10 +44,13 @@ public class Main {
         Set<String> treeSet = new TreeSet<>();
         boolean isTreeSetPopulated = treeSet.addAll(clonedElements);
         System.out.println("has tree set data in? - "+isTreeSetPopulated);
+        // adding an element at the end of the treeSet, but it will be inserted in a natural order
+        treeSet.add("element0");
         //iterate through all elements of a tree set
-        treeSet.add("element4");
-        for (String item : treeSet){
-            System.out.println("tree set item: "+item);
+        Iterator<String> iterator = treeSet.iterator();
+        while(iterator.hasNext())
+        {
+            System.out.println("TreeSet element: "+iterator.next());
         }
         //compare two sets and retain elements which are same on both sets
         boolean isTreeSetChanged = treeSet.retainAll(clonedElements);

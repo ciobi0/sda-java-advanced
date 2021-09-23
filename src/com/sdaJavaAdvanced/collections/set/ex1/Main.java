@@ -13,9 +13,9 @@ public class Main {
             System.out.println("please enter a colour: ");
             colour=scanner.nextLine();
             colours.add(colour);
-            for (String colourItem : colours){
-                System.out.println(colourItem);
             }
+        for (String colourItem : colours){
+            System.out.println(colourItem);
         }
     }
 }
