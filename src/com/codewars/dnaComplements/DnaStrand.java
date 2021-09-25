@@ -1,6 +1,4 @@
-package com.codewars.dna;
-
-import java.util.Arrays;
+package com.codewars.dnaComplements;
 
 /**
  * In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with
