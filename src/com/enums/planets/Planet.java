@@ -1,5 +1,11 @@
 package com.enums.planets;
 
+/**
+ * An enum type is a special data type that enables for a variable to be a set of predefined constants.
+ * enum constants are public, static and final
+ * All enums implicitly extend java.lang.Enum and therefore an enum cannot extend anything else.
+ * The constructor for an enum type must be package-private or private access.
+ */
 public enum Planet {
     MERCURY(3.303e+23, 2.4397e6),
     VENUS(4.869e+24, 6.0518e6),
